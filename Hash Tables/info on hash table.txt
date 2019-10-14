@@ -1,0 +1,12 @@
+Hash Table: array + LinkedList
+
+* Access any value O(1) - Random access
+* Dynamically grow
+
+* Dictionaries in Python are hash tables. As you probably know, look ups with hash tables have amortized time complexity of O(1), but worst case complexity of O(n), where n is the number of elements in the hash table.
+
+* In a hash table when two elements have the same hash values a collision happens and the way that they’re usually dealt with is by adding those elements to a linked list. The worst case is when the hash values of all elements in the table are the same, and therefore when all elements will be stored in the same linked list. Linked lists have worst case complexity of O(n) for look up, with n being the number of elements, as you have to through the entire linked list to find an element.
+
+* This case is highly unlikely, at least with a decent hash function That’s why we tend to say that hash tables have amortized worst time of O(1).
+
+
